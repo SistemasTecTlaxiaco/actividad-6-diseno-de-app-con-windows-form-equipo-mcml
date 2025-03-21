@@ -28,100 +28,100 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.rjTextBox1 = new Botonpersonalizado.RJTextBox();
+            this.Usuario = new Botonpersonalizado.RJTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.rjTextBox2 = new Botonpersonalizado.RJTextBox();
-            this.rjTextBox3 = new Botonpersonalizado.RJTextBox();
-            this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.Continuar = new CustomControls.RJControls.RJButton();
+            this.Contrasena2 = new Botonpersonalizado.RJTextBox();
+            this.Contrasena = new Botonpersonalizado.RJTextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // rjTextBox1
+            // Usuario
             // 
-            this.rjTextBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.rjTextBox1.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjTextBox1.BorderFocusColor = System.Drawing.Color.Navy;
-            this.rjTextBox1.BorderSize = 2;
-            this.rjTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjTextBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.rjTextBox1.Location = new System.Drawing.Point(18, 32);
-            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.rjTextBox1.Multiline = false;
-            this.rjTextBox1.Name = "rjTextBox1";
-            this.rjTextBox1.Padding = new System.Windows.Forms.Padding(7);
-            this.rjTextBox1.PasswordChar = false;
-            this.rjTextBox1.Size = new System.Drawing.Size(250, 39);
-            this.rjTextBox1.TabIndex = 0;
-            this.rjTextBox1.Texts = "";
-            this.rjTextBox1.UnderlinedStyle = false;
+            this.Usuario.BackColor = System.Drawing.SystemColors.Window;
+            this.Usuario.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.Usuario.BorderFocusColor = System.Drawing.Color.Navy;
+            this.Usuario.BorderSize = 2;
+            this.Usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Usuario.ForeColor = System.Drawing.Color.DimGray;
+            this.Usuario.Location = new System.Drawing.Point(18, 32);
+            this.Usuario.Margin = new System.Windows.Forms.Padding(4);
+            this.Usuario.Multiline = false;
+            this.Usuario.Name = "Usuario";
+            this.Usuario.Padding = new System.Windows.Forms.Padding(7);
+            this.Usuario.PasswordChar = false;
+            this.Usuario.Size = new System.Drawing.Size(250, 39);
+            this.Usuario.TabIndex = 0;
+            this.Usuario.Texts = "";
+            this.Usuario.UnderlinedStyle = false;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.panel1.Controls.Add(this.rjButton1);
-            this.panel1.Controls.Add(this.rjTextBox3);
-            this.panel1.Controls.Add(this.rjTextBox2);
-            this.panel1.Controls.Add(this.rjTextBox1);
+            this.panel1.Controls.Add(this.Continuar);
+            this.panel1.Controls.Add(this.Contrasena2);
+            this.panel1.Controls.Add(this.Contrasena);
+            this.panel1.Controls.Add(this.Usuario);
             this.panel1.Location = new System.Drawing.Point(263, 76);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(284, 274);
             this.panel1.TabIndex = 1;
             // 
-            // rjTextBox2
+            // Continuar
             // 
-            this.rjTextBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.rjTextBox2.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjTextBox2.BorderFocusColor = System.Drawing.Color.Navy;
-            this.rjTextBox2.BorderSize = 2;
-            this.rjTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjTextBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.rjTextBox2.Location = new System.Drawing.Point(18, 79);
-            this.rjTextBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.rjTextBox2.Multiline = false;
-            this.rjTextBox2.Name = "rjTextBox2";
-            this.rjTextBox2.Padding = new System.Windows.Forms.Padding(7);
-            this.rjTextBox2.PasswordChar = false;
-            this.rjTextBox2.Size = new System.Drawing.Size(250, 39);
-            this.rjTextBox2.TabIndex = 1;
-            this.rjTextBox2.Texts = "";
-            this.rjTextBox2.UnderlinedStyle = false;
+            this.Continuar.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Continuar.BackgroundColor = System.Drawing.Color.RoyalBlue;
+            this.Continuar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.Continuar.BorderRadius = 0;
+            this.Continuar.BorderSize = 0;
+            this.Continuar.FlatAppearance.BorderSize = 0;
+            this.Continuar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Continuar.ForeColor = System.Drawing.Color.White;
+            this.Continuar.Location = new System.Drawing.Point(68, 200);
+            this.Continuar.Name = "Continuar";
+            this.Continuar.Size = new System.Drawing.Size(150, 40);
+            this.Continuar.TabIndex = 3;
+            this.Continuar.Text = "Continuar";
+            this.Continuar.TextColor = System.Drawing.Color.White;
+            this.Continuar.UseVisualStyleBackColor = false;
             // 
-            // rjTextBox3
+            // Contrasena2
             // 
-            this.rjTextBox3.BackColor = System.Drawing.SystemColors.Window;
-            this.rjTextBox3.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjTextBox3.BorderFocusColor = System.Drawing.Color.Navy;
-            this.rjTextBox3.BorderSize = 2;
-            this.rjTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjTextBox3.ForeColor = System.Drawing.Color.DimGray;
-            this.rjTextBox3.Location = new System.Drawing.Point(18, 126);
-            this.rjTextBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.rjTextBox3.Multiline = false;
-            this.rjTextBox3.Name = "rjTextBox3";
-            this.rjTextBox3.Padding = new System.Windows.Forms.Padding(7);
-            this.rjTextBox3.PasswordChar = true;
-            this.rjTextBox3.Size = new System.Drawing.Size(250, 39);
-            this.rjTextBox3.TabIndex = 2;
-            this.rjTextBox3.Texts = "";
-            this.rjTextBox3.UnderlinedStyle = false;
+            this.Contrasena2.BackColor = System.Drawing.SystemColors.Window;
+            this.Contrasena2.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.Contrasena2.BorderFocusColor = System.Drawing.Color.Navy;
+            this.Contrasena2.BorderSize = 2;
+            this.Contrasena2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Contrasena2.ForeColor = System.Drawing.Color.DimGray;
+            this.Contrasena2.Location = new System.Drawing.Point(18, 126);
+            this.Contrasena2.Margin = new System.Windows.Forms.Padding(4);
+            this.Contrasena2.Multiline = false;
+            this.Contrasena2.Name = "Contrasena2";
+            this.Contrasena2.Padding = new System.Windows.Forms.Padding(7);
+            this.Contrasena2.PasswordChar = true;
+            this.Contrasena2.Size = new System.Drawing.Size(250, 39);
+            this.Contrasena2.TabIndex = 2;
+            this.Contrasena2.Texts = "";
+            this.Contrasena2.UnderlinedStyle = false;
             // 
-            // rjButton1
+            // Contrasena
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.RoyalBlue;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 0;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(68, 200);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(150, 40);
-            this.rjButton1.TabIndex = 3;
-            this.rjButton1.Text = "Continuar";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
+            this.Contrasena.BackColor = System.Drawing.SystemColors.Window;
+            this.Contrasena.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.Contrasena.BorderFocusColor = System.Drawing.Color.Navy;
+            this.Contrasena.BorderSize = 2;
+            this.Contrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Contrasena.ForeColor = System.Drawing.Color.DimGray;
+            this.Contrasena.Location = new System.Drawing.Point(18, 79);
+            this.Contrasena.Margin = new System.Windows.Forms.Padding(4);
+            this.Contrasena.Multiline = false;
+            this.Contrasena.Name = "Contrasena";
+            this.Contrasena.Padding = new System.Windows.Forms.Padding(7);
+            this.Contrasena.PasswordChar = false;
+            this.Contrasena.Size = new System.Drawing.Size(250, 39);
+            this.Contrasena.TabIndex = 1;
+            this.Contrasena.Texts = "";
+            this.Contrasena.UnderlinedStyle = false;
             // 
             // Form2
             // 
@@ -140,10 +140,10 @@
 
         #endregion
 
-        private RJTextBox rjTextBox1;
+        private RJTextBox Usuario;
         private System.Windows.Forms.Panel panel1;
-        private CustomControls.RJControls.RJButton rjButton1;
-        private RJTextBox rjTextBox3;
-        private RJTextBox rjTextBox2;
+        private CustomControls.RJControls.RJButton Continuar;
+        private RJTextBox Contrasena2;
+        private RJTextBox Contrasena;
     }
 }

@@ -29,130 +29,142 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.rjButton1 = new CustomControls.RJControls.RJButton();
-            this.rjButton2 = new CustomControls.RJControls.RJButton();
-            this.rjButton3 = new CustomControls.RJControls.RJButton();
-            this.rjButton4 = new CustomControls.RJControls.RJButton();
-            this.rjButton5 = new CustomControls.RJControls.RJButton();
+            this.Todas = new CustomControls.RJControls.RJButton();
+            this.Trabajo = new CustomControls.RJControls.RJButton();
+            this.Personal = new CustomControls.RJControls.RJButton();
+            this.Metas = new CustomControls.RJControls.RJButton();
+            this.ParaIrAgregar = new CustomControls.RJControls.RJButton();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 24);
+            this.label1.Location = new System.Drawing.Point(18, 37);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 18);
+            this.label1.Size = new System.Drawing.Size(202, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "Agenda de tareas";
             // 
-            // rjButton1
+            // Todas
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.RoyalBlue;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 0;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(12, 54);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(115, 34);
-            this.rjButton1.TabIndex = 1;
-            this.rjButton1.Text = "Todas";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
+            this.Todas.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Todas.BackgroundColor = System.Drawing.Color.RoyalBlue;
+            this.Todas.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.Todas.BorderRadius = 0;
+            this.Todas.BorderSize = 0;
+            this.Todas.FlatAppearance.BorderSize = 0;
+            this.Todas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Todas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Todas.ForeColor = System.Drawing.Color.White;
+            this.Todas.Location = new System.Drawing.Point(18, 83);
+            this.Todas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Todas.Name = "Todas";
+            this.Todas.Size = new System.Drawing.Size(172, 52);
+            this.Todas.TabIndex = 1;
+            this.Todas.Text = "Todas";
+            this.Todas.TextColor = System.Drawing.Color.White;
+            this.Todas.UseVisualStyleBackColor = false;
+            this.Todas.Click += new System.EventHandler(this.Todas_Click);
             // 
-            // rjButton2
+            // Trabajo
             // 
-            this.rjButton2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.rjButton2.BackgroundColor = System.Drawing.Color.RoyalBlue;
-            this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton2.BorderRadius = 0;
-            this.rjButton2.BorderSize = 0;
-            this.rjButton2.FlatAppearance.BorderSize = 0;
-            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(133, 54);
-            this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(104, 34);
-            this.rjButton2.TabIndex = 2;
-            this.rjButton2.Text = "Trabajo";
-            this.rjButton2.TextColor = System.Drawing.Color.White;
-            this.rjButton2.UseVisualStyleBackColor = false;
+            this.Trabajo.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Trabajo.BackgroundColor = System.Drawing.Color.RoyalBlue;
+            this.Trabajo.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.Trabajo.BorderRadius = 0;
+            this.Trabajo.BorderSize = 0;
+            this.Trabajo.FlatAppearance.BorderSize = 0;
+            this.Trabajo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Trabajo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Trabajo.ForeColor = System.Drawing.Color.White;
+            this.Trabajo.Location = new System.Drawing.Point(200, 83);
+            this.Trabajo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Trabajo.Name = "Trabajo";
+            this.Trabajo.Size = new System.Drawing.Size(156, 52);
+            this.Trabajo.TabIndex = 2;
+            this.Trabajo.Text = "Trabajo";
+            this.Trabajo.TextColor = System.Drawing.Color.White;
+            this.Trabajo.UseVisualStyleBackColor = false;
+            this.Trabajo.Click += new System.EventHandler(this.Trabajo_Click);
             // 
-            // rjButton3
+            // Personal
             // 
-            this.rjButton3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.rjButton3.BackgroundColor = System.Drawing.Color.RoyalBlue;
-            this.rjButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton3.BorderRadius = 0;
-            this.rjButton3.BorderSize = 0;
-            this.rjButton3.FlatAppearance.BorderSize = 0;
-            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.rjButton3.ForeColor = System.Drawing.Color.White;
-            this.rjButton3.Location = new System.Drawing.Point(256, 54);
-            this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(115, 34);
-            this.rjButton3.TabIndex = 3;
-            this.rjButton3.Text = "Personal";
-            this.rjButton3.TextColor = System.Drawing.Color.White;
-            this.rjButton3.UseVisualStyleBackColor = false;
+            this.Personal.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Personal.BackgroundColor = System.Drawing.Color.RoyalBlue;
+            this.Personal.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.Personal.BorderRadius = 0;
+            this.Personal.BorderSize = 0;
+            this.Personal.FlatAppearance.BorderSize = 0;
+            this.Personal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Personal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Personal.ForeColor = System.Drawing.Color.White;
+            this.Personal.Location = new System.Drawing.Point(384, 83);
+            this.Personal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Personal.Name = "Personal";
+            this.Personal.Size = new System.Drawing.Size(172, 52);
+            this.Personal.TabIndex = 3;
+            this.Personal.Text = "Personal";
+            this.Personal.TextColor = System.Drawing.Color.White;
+            this.Personal.UseVisualStyleBackColor = false;
+            this.Personal.Click += new System.EventHandler(this.Personal_Click);
             // 
-            // rjButton4
+            // Metas
             // 
-            this.rjButton4.BackColor = System.Drawing.Color.RoyalBlue;
-            this.rjButton4.BackgroundColor = System.Drawing.Color.RoyalBlue;
-            this.rjButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton4.BorderRadius = 0;
-            this.rjButton4.BorderSize = 0;
-            this.rjButton4.FlatAppearance.BorderSize = 0;
-            this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.rjButton4.ForeColor = System.Drawing.Color.White;
-            this.rjButton4.Location = new System.Drawing.Point(377, 54);
-            this.rjButton4.Name = "rjButton4";
-            this.rjButton4.Size = new System.Drawing.Size(100, 34);
-            this.rjButton4.TabIndex = 4;
-            this.rjButton4.Text = "Meta";
-            this.rjButton4.TextColor = System.Drawing.Color.White;
-            this.rjButton4.UseVisualStyleBackColor = false;
+            this.Metas.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Metas.BackgroundColor = System.Drawing.Color.RoyalBlue;
+            this.Metas.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.Metas.BorderRadius = 0;
+            this.Metas.BorderSize = 0;
+            this.Metas.FlatAppearance.BorderSize = 0;
+            this.Metas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Metas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Metas.ForeColor = System.Drawing.Color.White;
+            this.Metas.Location = new System.Drawing.Point(566, 83);
+            this.Metas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Metas.Name = "Metas";
+            this.Metas.Size = new System.Drawing.Size(150, 52);
+            this.Metas.TabIndex = 4;
+            this.Metas.Text = "Meta";
+            this.Metas.TextColor = System.Drawing.Color.White;
+            this.Metas.UseVisualStyleBackColor = false;
+            this.Metas.Click += new System.EventHandler(this.Metas_Click);
             // 
-            // rjButton5
+            // ParaIrAgregar
             // 
-            this.rjButton5.BackColor = System.Drawing.Color.RoyalBlue;
-            this.rjButton5.BackgroundColor = System.Drawing.Color.RoyalBlue;
-            this.rjButton5.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton5.BorderRadius = 0;
-            this.rjButton5.BorderSize = 0;
-            this.rjButton5.FlatAppearance.BorderSize = 0;
-            this.rjButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.rjButton5.ForeColor = System.Drawing.Color.White;
-            this.rjButton5.Location = new System.Drawing.Point(373, 149);
-            this.rjButton5.Name = "rjButton5";
-            this.rjButton5.Size = new System.Drawing.Size(50, 31);
-            this.rjButton5.TabIndex = 5;
-            this.rjButton5.Text = "+";
-            this.rjButton5.TextColor = System.Drawing.Color.White;
-            this.rjButton5.UseVisualStyleBackColor = false;
+            this.ParaIrAgregar.BackColor = System.Drawing.Color.RoyalBlue;
+            this.ParaIrAgregar.BackgroundColor = System.Drawing.Color.RoyalBlue;
+            this.ParaIrAgregar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.ParaIrAgregar.BorderRadius = 0;
+            this.ParaIrAgregar.BorderSize = 0;
+            this.ParaIrAgregar.FlatAppearance.BorderSize = 0;
+            this.ParaIrAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ParaIrAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.ParaIrAgregar.ForeColor = System.Drawing.Color.White;
+            this.ParaIrAgregar.Location = new System.Drawing.Point(560, 229);
+            this.ParaIrAgregar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ParaIrAgregar.Name = "ParaIrAgregar";
+            this.ParaIrAgregar.Size = new System.Drawing.Size(75, 48);
+            this.ParaIrAgregar.TabIndex = 5;
+            this.ParaIrAgregar.Text = "+";
+            this.ParaIrAgregar.TextColor = System.Drawing.Color.White;
+            this.ParaIrAgregar.UseVisualStyleBackColor = false;
+            this.ParaIrAgregar.Click += new System.EventHandler(this.ParaIrAgregar_Click);
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(489, 255);
-            this.Controls.Add(this.rjButton5);
-            this.Controls.Add(this.rjButton4);
-            this.Controls.Add(this.rjButton3);
-            this.Controls.Add(this.rjButton2);
-            this.Controls.Add(this.rjButton1);
+            this.ClientSize = new System.Drawing.Size(734, 392);
+            this.Controls.Add(this.ParaIrAgregar);
+            this.Controls.Add(this.Metas);
+            this.Controls.Add(this.Personal);
+            this.Controls.Add(this.Trabajo);
+            this.Controls.Add(this.Todas);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form3";
             this.Text = "Inicio";
             this.Load += new System.EventHandler(this.Form3_Load);
@@ -164,10 +176,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private CustomControls.RJControls.RJButton rjButton1;
-        private CustomControls.RJControls.RJButton rjButton2;
-        private CustomControls.RJControls.RJButton rjButton3;
-        private CustomControls.RJControls.RJButton rjButton4;
-        private CustomControls.RJControls.RJButton rjButton5;
+        private CustomControls.RJControls.RJButton Todas;
+        private CustomControls.RJControls.RJButton Trabajo;
+        private CustomControls.RJControls.RJButton Personal;
+        private CustomControls.RJControls.RJButton Metas;
+        private CustomControls.RJControls.RJButton ParaIrAgregar;
     }
 }

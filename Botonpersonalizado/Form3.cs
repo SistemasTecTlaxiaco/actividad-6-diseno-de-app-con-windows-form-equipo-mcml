@@ -21,5 +21,30 @@ namespace Botonpersonalizado
         {
 
         }
+
+        private void Todas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Trabajo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Personal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Metas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ParaIrAgregar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
