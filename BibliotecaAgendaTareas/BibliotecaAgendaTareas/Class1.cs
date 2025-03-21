@@ -112,6 +112,14 @@ namespace BibliotecaAgendaTareas
                 .ToList(); // Devuelve la lista de tareas filtradas como una lista de cadenas.
         }
 
+        // Obtener todas las tareas
+        public List<string> ObtenerTodasLasTareas() // Método para obtener todas las tareas.
+        {
+            return tareas
+                .Select(t => $"ID: {t.Id} | {t.Titulo} | Vence: {t.FechaVencimiento.ToShortDateString()} | Estado: {(t.Completada ? "✔ Completada" : "Pendiente")}") // Selecciona un formato de texto para cada tarea.
+                .ToList(); // Devuelve la lista de todas las tareas.
+        }
+
 
     }
 
