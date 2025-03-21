@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BibliotecaAgendaTareas;
+
 
 namespace Botonpersonalizado
 {
     public partial class Form4 : Form
     {
+        private BibliotecaAgendaTareas.AgendaTareas agenda = new BibliotecaAgendaTareas.AgendaTareas();
+
         public Form4()
         {
             InitializeComponent();
@@ -49,7 +53,7 @@ namespace Botonpersonalizado
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label2_Click(object sender, EventArgs e)

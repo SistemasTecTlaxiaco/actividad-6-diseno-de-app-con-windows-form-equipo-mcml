@@ -54,6 +54,7 @@
             this.Usuario.TabIndex = 0;
             this.Usuario.Texts = "";
             this.Usuario.UnderlinedStyle = false;
+            this.Usuario._TextChanged += new System.EventHandler(this.Usuario__TextChanged);
             // 
             // panel1
             // 
@@ -84,6 +85,7 @@
             this.Continuar.Text = "Continuar";
             this.Continuar.TextColor = System.Drawing.Color.White;
             this.Continuar.UseVisualStyleBackColor = false;
+            this.Continuar.Click += new System.EventHandler(this.Continuar_Click);
             // 
             // Contrasena2
             // 
@@ -103,6 +105,7 @@
             this.Contrasena2.TabIndex = 2;
             this.Contrasena2.Texts = "";
             this.Contrasena2.UnderlinedStyle = false;
+            this.Contrasena2._TextChanged += new System.EventHandler(this.Contrasena2__TextChanged);
             // 
             // Contrasena
             // 
@@ -122,6 +125,7 @@
             this.Contrasena.TabIndex = 1;
             this.Contrasena.Texts = "";
             this.Contrasena.UnderlinedStyle = false;
+            this.Contrasena._TextChanged += new System.EventHandler(this.Contrasena__TextChanged);
             // 
             // Form2
             // 
