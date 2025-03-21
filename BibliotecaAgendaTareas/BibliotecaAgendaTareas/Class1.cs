@@ -103,6 +103,14 @@ namespace BibliotecaAgendaTareas
             }
             return "Error: No se encontró la tarea."; // Si no se encuentra la tarea, devuelve un mensaje de error.
         }
+        // Obtener tareas por categoría
+        public List<string> ObtenerTareasPorCategoria(string categoria) // Método para obtener las tareas filtradas por categoría.
+        {
+            return tareas
+                .Where(t => t.Categoria.Equals(categoria, StringComparison.OrdinalIgnoreCase)) // Filtra las tareas por la categoría proporcionada.
+                .Select(t => $"ID: {t.Id} | {t.Titulo} | Vence: {t.FechaVencimiento.ToShortDateString()} | Estado: {(t.Completada ? "✔ Completada" : "Pendiente")}") // Selecciona un formato de texto para cada tarea.
+                .ToList(); // Devuelve la lista de tareas filtradas como una lista de cadenas.
+        }
 
 
     }
