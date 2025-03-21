@@ -62,7 +62,32 @@ namespace BibliotecaAgendaTareas
             usuarios.Add(new Usuario(nombreUsuario, contraseña)); // Si el nombre no está en uso, agrega un nuevo usuario a la lista.
             return "Registro exitoso. Ahora puedes iniciar sesión."; // Devuelve un mensaje indicando que el registro fue exitoso.
         }
-    }
+
+        // Inicio de sesión
+        public string IniciarSesion(string nombreUsuario, string contraseña) // Método para iniciar sesión con un usuario y contraseña.
+        {
+            Usuario usuario = usuarios.FirstOrDefault(u => u.NombreUsuario == nombreUsuario && u.Contraseña == contraseña); // Busca el usuario que coincida con el nombre y contraseña.
+
+            if (usuario != null) // Si el usuario existe.
+            {
+                return $"Inicio de sesión exitoso. Bienvenido, {nombreUsuario}."; // Devuelve un mensaje de bienvenida.
+            }
+            else
+            {
+                return "Error: Nombre de usuario o contraseña incorrectos."; // Si no se encuentra el usuario o la contraseña es incorrecta, devuelve un mensaje de error.
+            }
+        }
+
+        // Agregar tarea con confirmación
+        public string AgregarTarea(string titulo, string descripcion, DateTime fechaVencimiento, string categoria) // Método para agregar una nueva tarea.
+        {
+            Tarea nuevaTarea = new Tarea(contadorId++, titulo, descripcion, fechaVencimiento, categoria); // Crea una nueva tarea con un ID único y los datos proporcionados.
+            tareas.Add(nuevaTarea); // Agrega la nueva tarea a la lista de tareas.
+            return $"Tarea '{titulo}' agregada exitosamente."; // Devuelve un mensaje confirmando que la tarea fue agregada.
+        }
+
 
     }
+
+}
 
