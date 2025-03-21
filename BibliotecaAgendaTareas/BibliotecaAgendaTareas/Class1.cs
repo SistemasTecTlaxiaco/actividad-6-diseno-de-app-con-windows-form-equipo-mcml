@@ -32,6 +32,17 @@ namespace BibliotecaAgendaTareas
                 Contrasena = contrasena; // Asigna la contraseña.
             }
         }
+        // Clase interna para Tarea
+        private class Tarea // Define una clase privada interna llamada Tarea.
+        {
+            public int Id { get; set; } // Propiedad pública para el ID de la tarea.
+            public string Titulo { get; set; } // Propiedad pública para el título de la tarea.
+            public string Descripcion { get; set; } // Propiedad pública para la descripción de la tarea.
+            public DateTime FechaVencimiento { get; set; } // Propiedad pública para la fecha de vencimiento de la tarea.
+            public string Categoria { get; set; } // Propiedad pública para la categoría de la tarea.
+            public bool Completada { get; set; } // Propiedad pública para el estado de la tarea (completada o no).
 
+
+        }
     }
 }
