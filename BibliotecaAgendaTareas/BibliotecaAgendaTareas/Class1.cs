@@ -85,6 +85,24 @@ namespace BibliotecaAgendaTareas
             tareas.Add(nuevaTarea); // Agrega la nueva tarea a la lista de tareas.
             return $"Tarea '{titulo}' agregada exitosamente."; // Devuelve un mensaje confirmando que la tarea fue agregada.
         }
+        // Eliminar tarea con mensaje de confirmación
+        public string EliminarTarea(int id) // Método para eliminar una tarea según su ID.
+        {
+            int eliminadas = tareas.RemoveAll(t => t.Id == id); // Elimina todas las tareas que coincidan con el ID.
+            return eliminadas > 0 ? $"Tarea con ID {id} eliminada." : "Error: No se encontró la tarea."; // Si se eliminó una tarea, devuelve un mensaje de confirmación. Si no se encontró, devuelve un mensaje de error.
+        }
+
+        // Marcar tarea como completada con confirmación
+        public string MarcarTareaComoCompletada(int id) // Método para marcar una tarea como completada.
+        {
+            Tarea tarea = tareas.FirstOrDefault(t => t.Id == id); // Busca la tarea que coincida con el ID.
+            if (tarea != null) // Si se encuentra la tarea.
+            {
+                tarea.Completada = true; // Marca la tarea como completada.
+                return $"Tarea '{tarea.Titulo}' marcada como completada."; // Devuelve un mensaje confirmando que la tarea fue marcada como completada.
+            }
+            return "Error: No se encontró la tarea."; // Si no se encuentra la tarea, devuelve un mensaje de error.
+        }
 
 
     }
