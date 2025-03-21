@@ -41,8 +41,28 @@ namespace BibliotecaAgendaTareas
             public DateTime FechaVencimiento { get; set; } // Propiedad pública para la fecha de vencimiento de la tarea.
             public string Categoria { get; set; } // Propiedad pública para la categoría de la tarea.
             public bool Completada { get; set; } // Propiedad pública para el estado de la tarea (completada o no).
+            public Tarea(int id, string titulo, string descripcion, DateTime fechaVencimiento, string categoria) // Constructor para inicializar una tarea.
+            {
+                Id = id; // Asigna el ID de la tarea.
+                Titulo = titulo; // Asigna el título de la tarea.
+                Descripcion = descripcion; // Asigna la descripción de la tarea.
+                FechaVencimiento = fechaVencimiento; // Asigna la fecha de vencimiento.
+                Categoria = categoria; // Asigna la categoría de la tarea.
+                Completada = false; // Inicializa el estado de la tarea como no completada.
+            }
+        }
+        // Registro de usuario
+        public string RegistrarUsuario(string nombreUsuario, string contraseña) // Método para registrar un nuevo usuario.
+        {
+            if (usuarios.Any(u => u.NombreUsuario == nombreUsuario)) // Verifica si el nombre de usuario ya está en uso.
+            {
+                return "Error: El nombre de usuario ya está en uso."; // Si el nombre de usuario ya existe, devuelve un mensaje de error.
+            }
 
-
+            usuarios.Add(new Usuario(nombreUsuario, contraseña)); // Si el nombre no está en uso, agrega un nuevo usuario a la lista.
+            return "Registro exitoso. Ahora puedes iniciar sesión."; // Devuelve un mensaje indicando que el registro fue exitoso.
         }
     }
-}
+
+    }
+
