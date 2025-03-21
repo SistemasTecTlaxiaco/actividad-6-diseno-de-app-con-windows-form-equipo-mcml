@@ -4,3 +4,9 @@ C:\Users\lenin\OneDrive\CmapToolsLogs\Escritorio\actividad-6-diseno-de-app-con-w
 C:\Users\lenin\OneDrive\CmapToolsLogs\Escritorio\actividad-6-diseno-de-app-con-windows-form-equipo-mcml\BibliotecaAgendaTareas\BibliotecaAgendaTareas\obj\Debug\BibliotecaAgendaTareas.csproj.CoreCompileInputs.cache
 C:\Users\lenin\OneDrive\CmapToolsLogs\Escritorio\actividad-6-diseno-de-app-con-windows-form-equipo-mcml\BibliotecaAgendaTareas\BibliotecaAgendaTareas\obj\Debug\BibliotecaAgendaTareas.dll
 C:\Users\lenin\OneDrive\CmapToolsLogs\Escritorio\actividad-6-diseno-de-app-con-windows-form-equipo-mcml\BibliotecaAgendaTareas\BibliotecaAgendaTareas\obj\Debug\BibliotecaAgendaTareas.pdb
+C:\Users\CICEM\actividad-6-diseno-de-app-con-windows-form-equipo-mcml\BibliotecaAgendaTareas\BibliotecaAgendaTareas\bin\Debug\BibliotecaAgendaTareas.dll
+C:\Users\CICEM\actividad-6-diseno-de-app-con-windows-form-equipo-mcml\BibliotecaAgendaTareas\BibliotecaAgendaTareas\bin\Debug\BibliotecaAgendaTareas.pdb
+C:\Users\CICEM\actividad-6-diseno-de-app-con-windows-form-equipo-mcml\BibliotecaAgendaTareas\BibliotecaAgendaTareas\obj\Debug\BibliotecaAgendaTareas.csproj.AssemblyReference.cache
+C:\Users\CICEM\actividad-6-diseno-de-app-con-windows-form-equipo-mcml\BibliotecaAgendaTareas\BibliotecaAgendaTareas\obj\Debug\BibliotecaAgendaTareas.csproj.CoreCompileInputs.cache
+C:\Users\CICEM\actividad-6-diseno-de-app-con-windows-form-equipo-mcml\BibliotecaAgendaTareas\BibliotecaAgendaTareas\obj\Debug\BibliotecaAgendaTareas.dll
+C:\Users\CICEM\actividad-6-diseno-de-app-con-windows-form-equipo-mcml\BibliotecaAgendaTareas\BibliotecaAgendaTareas\obj\Debug\BibliotecaAgendaTareas.pdb

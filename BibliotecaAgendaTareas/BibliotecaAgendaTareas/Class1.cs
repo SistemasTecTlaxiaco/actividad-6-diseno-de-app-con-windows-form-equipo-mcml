@@ -64,9 +64,9 @@ namespace BibliotecaAgendaTareas
         }
 
         // Inicio de sesión
-        public string IniciarSesion(string nombreUsuario, string contraseña) // Método para iniciar sesión con un usuario y contraseña.
+        public string IniciarSesion(string nombreUsuario, string contrasena) // Método para iniciar sesión con un usuario y contraseña.
         {
-            Usuario usuario = usuarios.FirstOrDefault(u => u.NombreUsuario == nombreUsuario && u.Contraseña == contraseña); // Busca el usuario que coincida con el nombre y contraseña.
+            Usuario usuario = usuarios.FirstOrDefault(u => u.NombreUsuario == nombreUsuario && u.Contrasena == contrasena); // Busca el usuario que coincida con el nombre y contraseña.
 
             if (usuario != null) // Si el usuario existe.
             {
@@ -120,6 +120,17 @@ namespace BibliotecaAgendaTareas
                 .ToList(); // Devuelve la lista de todas las tareas.
         }
 
+        // Generar recordatorios para tareas próximas a vencer
+        public List<string> ObtenerRecordatorios() // Método para generar recordatorios de tareas próximas a vencer.
+        {
+            DateTime hoy = DateTime.Now; // Obtiene la fecha y hora actual.
+            var recordatorios = tareas
+                .Where(t => !t.Completada && (t.FechaVencimiento - hoy).TotalDays <= 2) // Filtra las tareas que no están completadas y cuyo vencimiento sea en los próximos 2 días.
+                .Select(t => $"Recordatorio: La tarea '{t.Titulo}' vence el {t.FechaVencimiento.ToShortDateString()}.") // Genera un mensaje para cada tarea próxima a vencer.
+                .ToList(); // Convierte la lista filtrada en una lista de cadenas.
+
+            return recordatorios.Any() ? recordatorios : new List<string> { "No hay tareas próximas a vencer." }; // Si hay tareas próximas a vencer, las devuelve. Si no, devuelve un mensaje indicando que no hay tareas próximas a vencer.
+        }
 
     }
 
